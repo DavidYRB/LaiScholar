@@ -1,0 +1,11 @@
+{
+    "email": "<YOUR_EMAIL>",
+    "project": "proj3",
+    "files": [
+        "third-party-libs",
+        "services",
+        "WORKSPACE",
+        "prebuilt",
+        ".bazelrc"
+    ]
+}
