@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
   auto router = std::make_shared<services::http::SimpleHttpRouter>();
 
   // Register handlers...
-
+  router->get("/hello", std::make_shared<services::http::HelloHandler>());
   // TODO(HOMEWORK-4): UPDATE THE FOLLOWING LINE AND FIX INCLUDE.
   auto recommender =
       std::make_unique<services::http::recommender::PlainRecommender>();
