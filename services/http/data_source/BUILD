@@ -35,6 +35,7 @@ cc_library(
     deps = [
         ":data_source_base",
         # TODO(HOMEWORK-2): ADD YOUR CODE HERE.
+        ":rocksdb_utils",
         "//external:glog",
     ],
 )
