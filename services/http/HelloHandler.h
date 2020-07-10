@@ -5,7 +5,7 @@
 
 namespace services {
 namespace http {
-    class HellowHandler : public HttpRequestHandler {
+    class HelloHandler : public HttpRequestHandler {
         public:
          void handle(std::shared_ptr<HttpSession> session) override;
     };

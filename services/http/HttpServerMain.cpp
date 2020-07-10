@@ -1,6 +1,7 @@
 #include "gflags/gflags.h"
 #include "glog/logging.h"
 #include "rocksdb/db.h"
+#include "services/http/HelloHandler.h"
 #include "services/http/HttpServer.h"
 #include "services/http/HttpUtils.h"
 #include "services/http/LambdaHandler.h"

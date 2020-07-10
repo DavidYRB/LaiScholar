@@ -10,9 +10,9 @@ using json = nlohmann::json;
 
 namespace beast_http = boost::beast::http;
 
-namespace service{
+namespace services{
 namespace http{
-    void handle(std::shared_ptr<HttpSession> session){
+    void HelloHandler::handle(std::shared_ptr<HttpSession> session){
         std::unordered_map<std::string, std::string> resp = {
             {"message", "hello, world"},
             {"status", "completed"},

@@ -5,6 +5,7 @@ cc_binary(
         ":http_server",
         ":static_file_handler",
         ":search_handler",
+        ":hello_handler",
         ":lambda_handler",
         ":simple_http_router",
         "//services/http/recommender:plain_recommender",
@@ -29,6 +30,23 @@ cc_library(
     deps = [
         "//external:boost",
         "//external:glog",
+    ],
+)
+
+cc_library(
+    name = "hello_handler",
+    srcs = [
+        "HelloHandler.cpp",
+    ],
+    hdrs = [
+        "HelloHandler.h",
+    ],
+    deps = [
+        ":http_session",
+        ":http_utils",
+        "//external:boost",
+        "//external:glog",
+        "//external:nlohmann_json",
     ],
 )
 
